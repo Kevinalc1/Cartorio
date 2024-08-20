@@ -158,7 +158,8 @@ int main()//meun inicial
 		
 		printf("\t1 - Registrar nomes\n");// registrar nomes
 		printf("\t2 - Consultar nomes\n");// consultar nomes
-		printf("\t3 - Deletar nomes\n\n");// deletar nomes
+		printf("\t3 - Deletar nomes\n");// deletar nomes
+		printf("\t4 - Sair do sistema\n\n");// sair do sistema
 		printf("Opção: ");//fim do menu
 	
 		scanf("%d", &opcao);//armazenando a escolha do usuario
@@ -178,6 +179,12 @@ int main()//meun inicial
 			case 3://opção para a função (3)
 			deletar();//chamada de funções (deletar)
 			break;//sair do bloco após a execução da chamada
+			
+			case 4://sair do sistema (4)
+			printf("Obrigado por utilizar o sistema");//mensagem de saida do sistema
+			return 0;//retornar ao valor 0
+			break;//sair do bloco de execução da chamada
+			
 			
 			default://qualquer outra opção que nao seja as previamentes programadas	
 			printf("### Opção invalida ###\n\n");//mensagem para o usuário
